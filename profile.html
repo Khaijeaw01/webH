@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="homepage.html">หน้าหลัก</a>
+            <a href="profile.html" class="active">โปรไฟล์</a>
+            <button id="logoutBtn">ออกจากระบบ</button>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="card">
+            <h2>ประวัติน้ำหนัก</h2>
+            <canvas id="weightChart"></canvas>
+            <div class="weight-update">
+                <input type="number" id="newWeight" placeholder="น้ำหนักใหม่ (กก.)">
+                <button onclick="updateWeight()">อัพเดทน้ำหนัก</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
